@@ -1,0 +1,129 @@
+<!---
+Add the doctype declaration x
+
+Add the html element x
+
+Add the head element x
+
+It should have a title element with the contents, Order a Melongram!  x
+
+Add the body element x
+
+The contents of your page should go in the body x
+
+=======
+
+Now, add HTML to mark-up the introductory content. x
+
+Order a Melongram should go in an h1 element x
+
+The next two paragraphs should both go in p elements x
+==========
+The next section (titled, “Melon Options”) should display a table of melons and their prices.
+
+Melon Options should go in an h2 element x
+
+The next paragraph introduces the table of melons, so put it in a p element x
+
+Create a table element to contain each row of melons and their prices x
+
+Each row should go in a tr element x
+
+Each row should contain two td elements: one for the name of the melon, and one for its price x
+========
+Place the header, Order Form in an h2 element x
+
+Create a form to contain the rest of the content x
+
+Inside the form:
+
+Add a text input to take in the user’s name. It should have the name, name x
+
+Add a text input to take in the Melongram recipient’s name. It should have the name, recipient x
+
+Under Choose a melon, create a select element with the name, melon x
+
+Put each melon in an option element. 
+Each option should have a value that’s the lowercase version of the melon name. 
+For example, the value for Watermelon should be watermelon
+
+Under When should we deliver?, create a set of radio buttons for each option 
+
+Each radio button should have the name, time
+
+The value for Morning is am
+
+The value for Evening is pm
+
+The value for Any time is any
+-->
+
+#open in browser to check it out!
+
+<!DOCTYPE html>
+<head>
+    <title>
+        <h1>Order a Melongram!</h1>
+    </title>
+</head>
+<body>
+   <!--- <h1>Order a Melongram!</h1> -->
+<p>There's no better way to show a loved one you care than with a Melongram.</p>
+
+<p>
+Each Melongram comes with a custom message printed on high-quality cardstock
+and your choice of a hand-picked, premium melon.
+</p>
+
+<h2>Melon Options</h2>
+
+<p>
+Choose from one of these melons:
+<!---table tag! tr goes around each pair of td-->
+<table>
+    <tr><td>Watermelon</td><td> $1,200.00</td></tr>
+    <tr><td>Canteloupe</td><td> $400.00</td></tr>
+    <tr><td>Honeydew</td><td> $1,750.00</td></tr>
+</table>
+</p>
+
+<h2>Order Form</h2>
+<!---getting user name-->
+
+<form>
+
+<label for="Name">
+    Name
+</label>
+    <input type="text" name="User" id="Name">
+
+</p><!---shipping info-->
+    <p>Recipient
+<input type="text" name="Recipient">
+</p>
+<!---melon selection-->
+<select name="Choose a melon">
+    <option value="Watermelon"> Watermelon </option>
+    <option value="Canteloupe"> Canteloupe </option>
+    <option value="Honeydew"> Honeydew </option>
+</select>
+
+<p>When should we deliver?</p>
+    <input type="radio" name="time" value="am"> Morning
+    <input type="radio" name="time" value="pm"> Evening
+    <input type="radio" name="time" value="any"> Any time
+
+
+<p> Enter your message:
+<!---text area with name message-->
+    <textarea name="message"> </textarea>
+</p>
+<p>Subscribe to our newsletter
+<!---create a checkbox with name 'subscribe' and value 'yes'-->
+<input type = "checkbox" name="subscribe" value = "yes"> Yes
+</p>
+<!---add a submit button-->
+<p><input type = "submit"></p>
+
+</form>
+</body>
